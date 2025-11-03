@@ -63,9 +63,19 @@ During the workshop, you'll learn to:
   - [Grype Documentation](https://github.com/anchore/grype)
   - [cdxgen Documentation](https://github.com/CycloneDX/cdxgen)
 
+## ✅ Verify Your Setup
+
+Once your environment is ready, run:
+
+```bash
+./verify-setup.sh
+```
+
+This will check that all tools are properly installed.
+
 ## 🧪 Try It Out
 
-Once your environment is ready, try these commands:
+Quick test commands:
 
 ```bash
 # Check all tools are installed
@@ -82,6 +92,10 @@ grype alpine:latest
 # Generate a CycloneDX SBOM (if you have a project)
 cdxgen -o project-bom.json
 ```
+
+## 📖 Workshop Guide
+
+For a comprehensive guide with exercises and examples, see [WORKSHOP_GUIDE.md](WORKSHOP_GUIDE.md)
 
 ## 🤝 Contributing
 
