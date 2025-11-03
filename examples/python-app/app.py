@@ -7,4 +7,4 @@ def hello():
     return "Hello from SBOM Workshop!"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
