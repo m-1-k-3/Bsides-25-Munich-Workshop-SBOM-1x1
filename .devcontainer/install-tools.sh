@@ -30,6 +30,7 @@ sudo curl -sSfL "$SBOMQS_URL" -o "$TMP_DEB"
 # Try to install; if dependencies are missing, fix them via apt
 sudo dpkg -i "$TMP_DEB" || sudo apt-get update && sudo apt-get install -f -y
 
+cd ..
 git clone "https://github.com/keycloak/keycloak.git"
 cd keycloak
 git checkout "26.3.3"
