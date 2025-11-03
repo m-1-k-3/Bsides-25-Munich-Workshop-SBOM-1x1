@@ -93,9 +93,11 @@ grype alpine:latest
 cdxgen -o project-bom.json
 ```
 
-## 📖 Workshop Guide
+## 📖 Documentation
 
-For a comprehensive guide with exercises and examples, see [WORKSHOP_GUIDE.md](WORKSHOP_GUIDE.md)
+- **[Workshop Guide](WORKSHOP_GUIDE.md)** - Comprehensive guide with exercises and examples
+- **[Quick Reference](QUICK_REFERENCE.md)** - Command cheat sheet for all tools
+- **[Examples](examples/)** - Sample applications to practice with
 
 ## 🤝 Contributing
 
