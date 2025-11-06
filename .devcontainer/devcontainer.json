@@ -1,6 +1,6 @@
 {
   "name": "SBOM Workshop Environment",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "image": "sbom-bsides:0.0.1",
   
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
@@ -19,8 +19,6 @@
     }
   },
 
-  "postCreateCommand": ".devcontainer/install-tools.sh",
-
   "customizations": {
     "vscode": {
       "extensions": [
@@ -32,7 +30,6 @@
       }
     }
   },
-
 
   "remoteUser": "vscode"
 }
