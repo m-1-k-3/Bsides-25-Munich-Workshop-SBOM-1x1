@@ -1,6 +1,6 @@
 {
   "name": "SBOM Workshop Environment",
-  "image": "sbom-bsides:0.0.1",
+  "image": "ghcr.io/mariuxdeangelo/bsides-25-munich-workshop-sbom-1x1-devcontainer:main-3b24f6e",
   
   "features": {
     "ghcr.io/devcontainers/features/node:1": {

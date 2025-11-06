@@ -13,8 +13,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends nodejs \
     && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
-# Note: Git, Zsh, and Oh My Zsh are already included in the base image
-
 # Install Docker CLI and Docker Compose
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
@@ -59,7 +57,10 @@ RUN git clone "https://github.com/keycloak/keycloak.git" \
     && git checkout "26.3.3" \
     && cd ..
 
-RUN git clone "https://github.com/apache/commons-io.git"
+RUN git clone "https://github.com/apache/commons-io.git" \
+    && cd commons-io \
+    && git checkout "rel/commons-io-2.17.0" \
+    && cd ..
 
 # Verify installations (this will be logged during build)
 RUN echo "=== Verifying installations ===" \
