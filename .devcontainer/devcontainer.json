@@ -31,5 +31,7 @@
     }
   },
 
+  "postCreateCommand": "bash /workspaces/Bsides-25-Munich-Workshop-SBOM-1x1/clone-repos.sh",
+
   "remoteUser": "vscode"
 }

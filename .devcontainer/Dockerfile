@@ -50,18 +50,6 @@ RUN SBOMQS_URL="https://github.com/interlynk-io/sbomqs/releases/download/v1.3.0/
     && rm -f "$TMP_DEB" \
     && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
-# Clone Keycloak repository at specific version
-WORKDIR /workspaces
-RUN git clone "https://github.com/keycloak/keycloak.git" \
-    && cd keycloak \
-    && git checkout "26.3.3" \
-    && cd ..
-
-RUN git clone "https://github.com/apache/commons-io.git" \
-    && cd commons-io \
-    && git checkout "rel/commons-io-2.17.0" \
-    && cd ..
-
 # Verify installations (this will be logged during build)
 RUN echo "=== Verifying installations ===" \
     && echo "Syft version:" && syft version \
